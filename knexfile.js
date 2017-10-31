@@ -1,6 +1,11 @@
 // Update with your config settings.
 
 module.exports = {
+  test: {
+    client: 'sqlite3',
+    debug: false
+  },
+
   development: {
     client: 'sqlite3',
     connection: {
@@ -39,4 +44,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-};
+}
