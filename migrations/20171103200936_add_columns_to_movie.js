@@ -1,6 +1,6 @@
 exports.up = function (knex, Promise) {
   return knex.schema.table('movies', table => {
-    table.integer('year').notNullable()
+    table.integer('year').nullable()
     table.string('poster').nullable()
   })
 }
