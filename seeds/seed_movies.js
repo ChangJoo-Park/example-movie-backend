@@ -3,7 +3,7 @@ exports.seed = function (knex, Promise) {
   return knex('movies').del()
     .then(function () {
       // Inserts seed entries
-      return knex("movies").insert([
+      return knex('movies').insert([
         { title: 'Movie 1' },
         { title: 'Movie 2' },
         { title: 'Movie 3' }
